@@ -16,6 +16,14 @@ CentOS uses the `yum` package manager by default. For ease of use, you should st
 
 DAP is a LAMP stack site, and [this article](https://web.archive.org/web/20230106195754/https://phoenixnap.com/kb/how-to-install-lamp-stack-on-centos) was perfect for getting Apache and friends up and running. You should be able to stop after the "Check whether PHP is working by visiting the following URL" step.
 
+Now that MariaDB is installed:
+
+1. Create a user named `dap` with a password of `dap`.
+2. Create a database named `dap`.
+3. Grant all privileges on the `dap` database to the `dap` user.
+
+(If you don't know how to do those, Google them. Remember that MariaDB is a drop-in replacement for MySQL so anything about MySQL also applies to MariaDB.)
+
 SELinux makes your system more secure, but it messes up the local file permissions for PHP in Apache. There's probably an official way to fix it, but for now let's disable SELinux by following [this article](https://web.archive.org/web/20230702115039/https://linuxize.com/post/how-to-disable-selinux-on-centos-7/).
 
 Now you can copy the files from this repo to `/var/www/html`. (Hint: Clone the repo on your dev machine and ask Jamie for a [Transmit](https://panic.com/transmit/) key.)
