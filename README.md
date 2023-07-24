@@ -9,7 +9,7 @@ I had to set this up on CentOS 7 because it's the only platform with PHP 5.4 tha
 
 In writing this guide, I will assume that you're comfortable with Ubuntu but hearing the name "CentOS" has you like 🤯.
 
-CentOS uses the `yum` package manager by default. For ease of use, you should start by upgrading to `dnf`, which is a lot more similar to `apt`. (`dnf` is the official replacement for `yum` in future Red Hat-related distribustions).
+CentOS uses the `yum` package manager by default. For ease of use, you should start by upgrading to `dnf`, which is a lot more similar to `apt`. (`dnf` is the official replacement for `yum` in future Red Hat-related distributions).
 
 1. `yum install dnf`
 2. When the droplet is set up, go ahead and update everything with `dnf update && dnf upgrade`
