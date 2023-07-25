@@ -48,7 +48,7 @@ $toQuery = "SELECT np.name name, np.id id, count(*) frequency
 
 $yearQuery = "SELECT left(creation,4) year, count(*) frequency
               FROM Document
-              WHERE creation > '1'
+              WHERE creation IS NOT NULL
               GROUP BY year
               ORDER BY 1";
 
