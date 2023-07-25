@@ -1,9 +1,9 @@
-DROP TABLE PersonReference;
-DROP TABLE PlaceReference;
-DROP TABLE StemCount;
-DROP TABLE Document;
-DROP TABLE NormalizedPerson;
-DROP TABLE NormalizedPlace;
+DROP TABLE IF EXISTS PersonReference;
+DROP TABLE IF EXISTS PlaceReference;
+DROP TABLE IF EXISTS StemCount;
+DROP TABLE IF EXISTS Document;
+DROP TABLE IF EXISTS NormalizedPerson;
+DROP TABLE IF EXISTS NormalizedPlace;
 
 CREATE  TABLE IF NOT EXISTS NormalizedPerson (
   id BIGINT NOT NULL AUTO_INCREMENT,
@@ -62,7 +62,7 @@ CREATE  TABLE IF NOT EXISTS PersonReference (
   docId VARCHAR(100) NULL,
   normalId BIGINT NULL,
   text VARCHAR(200) NULL,
-  PRIMARY KEY (id), 
+  PRIMARY KEY (id),
   INDEX (docId),
   FOREIGN KEY (docId) REFERENCES Document(id) ON DELETE CASCADE,
   FOREIGN KEY (normalId) REFERENCES NormalizedPerson(id) ON DELETE SET NULL)
