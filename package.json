@@ -31,7 +31,6 @@
     "jquery": "~1.9.1",
     "lodash": "~3.10.1",
     "napa": "^1.2.0",
-    "pageres": "^2.0.0",
     "require-dir": "^0.3.0",
     "respond.js": "^1.4.2",
     "sass-material-colors": "0.0.5",
