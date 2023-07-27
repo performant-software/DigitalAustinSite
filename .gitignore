@@ -9,6 +9,9 @@ sites/*/settings*.php
 sites/*/files
 sites/*/private
 
+# env file
+.env
+
 # Patch/diff artifacts.
 *.patch
 *.diff
