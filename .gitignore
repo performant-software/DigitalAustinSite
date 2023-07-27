@@ -12,6 +12,9 @@ sites/*/private
 # env file
 .env
 
+# Composer stuff
+vendor/*
+
 # Patch/diff artifacts.
 *.patch
 *.diff
