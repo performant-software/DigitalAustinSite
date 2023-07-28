@@ -8,7 +8,7 @@ var gulp = require('gulp'),
     combiner = require('stream-combiner2'),
     config = require('../config').scripts;
 
-gulp.task('uglify', function() {
+gulp.task('uglify', gulp.series(function() {
   var combined = combiner.obj([
     gulp.src(config.src),
     uglify(),
@@ -18,8 +18,9 @@ gulp.task('uglify', function() {
   combined.on('error', console.error.bind(console));
 
   return combined;
-});
+}));
 
-gulp.task('uglify:watch', function() {
-  gulp.watch(config.src, ['uglify']);
-});
+gulp.task('uglify:watch', gulp.series(function(done) {
+  gulp.watch(config.src, gulp.series(['uglify']));
+  done();
+}));

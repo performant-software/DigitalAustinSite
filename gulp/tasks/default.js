@@ -2,4 +2,4 @@
 
 var gulp = require('gulp');
 
-gulp.task('default', ['sass:watch', 'uglify:watch']);
+gulp.task('default', gulp.series(['sass:watch', 'uglify:watch']));

@@ -4,7 +4,7 @@ var gulp = require('gulp'),
     _ = require('lodash'),
     config = require('../config').scripts;
 
-gulp.task('common-scripts', function() {
+gulp.task('common-scripts', gulp.series(function() {
 
   var paths = [];
 
@@ -14,4 +14,4 @@ gulp.task('common-scripts', function() {
 
   return gulp.src(paths)
       .pipe(gulp.dest(config.vendor_dest));
-});
+}));

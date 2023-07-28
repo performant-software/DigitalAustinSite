@@ -21,8 +21,6 @@ module.exports = {
       bootstrap: vendor + '/bootstrap-sass/assets/javascripts/bootstrap.min.js',
       d3: vendor + '/d3/d3.min.js',
       jquery_paging: vendor + '/jquery-paging/jquery.paging.min.js',
-      html5shiv: vendor + '/html5shiv/dist/html5shiv.min.js',
-      respondjs: vendor + '/respond.js/dest/respond.min.js',
     }
   },
   browserify: {
