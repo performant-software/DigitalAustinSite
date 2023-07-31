@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Digital Austin Papers",
   "main": "index.js",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "build": "gulp",
     "dev": "gulp dev",
