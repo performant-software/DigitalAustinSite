@@ -19,5 +19,10 @@
     "DB_USERNAME": {
       "description": "Database username"
     }
-  }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/node"
+    }
+  ]
 }
