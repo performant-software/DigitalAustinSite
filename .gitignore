@@ -2,6 +2,10 @@
 *~
 debug.log
 
+# Frontend build process output
+public/css/*
+public/js/*
+
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php
 
