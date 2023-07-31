@@ -1,0 +1,23 @@
+{
+  "name": "Digital Auston Papers",
+  "description": "Code running the Digital Austin Papers website",
+  "website": "https://digitalaustinpapers.org",
+  "repository": "https://github.com/performant-software/DigitalAustinSite",
+  "scripts": {
+    "postdeploy": "npm ci && npm run build"
+  },
+  "env": {
+    "DB_HOSTNAME": {
+      "description": "Database hostname"
+    },
+    "DB_NAME": {
+      "description": "Database name"
+    },
+    "DB_PASSWORD": {
+      "description": "Database password"
+    },
+    "DB_USERNAME": {
+      "description": "Database username"
+    }
+  }
+}
