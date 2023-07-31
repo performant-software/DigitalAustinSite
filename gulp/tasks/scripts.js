@@ -4,8 +4,7 @@ var gulp = require('gulp'),
     _ = require('lodash'),
     config = require('../config').scripts;
 
-gulp.task('common-scripts', gulp.series(function() {
-
+const commonScripts = () => {
   var paths = [];
 
   _.forEach(config.common_libs, function(path) {
@@ -14,4 +13,6 @@ gulp.task('common-scripts', gulp.series(function() {
 
   return gulp.src(paths)
       .pipe(gulp.dest(config.vendor_dest));
-}));
+};
+
+module.exports = commonScripts

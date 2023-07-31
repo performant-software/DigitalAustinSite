@@ -10,7 +10,7 @@ var gulp = require('gulp'),
     config = require('../config').sass;
 
 
-gulp.task('sass', gulp.series(function() {
+const ingestSass = () => {
   var combined = combiner.obj([
     gulp.src(config.src),
         sourcemaps.init(),
@@ -23,9 +23,14 @@ gulp.task('sass', gulp.series(function() {
   combined.on('error', console.error.bind(console));
 
   return combined;
-}));
+};
 
-gulp.task('sass:watch', gulp.series(function(done) {
-  gulp.watch(config.srcdir + '*.scss', gulp.series(['sass']));
+const watchSass = (done) => {
+  gulp.watch(config.srcdir + '*.scss', ingestSass);
   done();
-}));
+};
+
+module.exports = {
+  ingestSass,
+  watchSass
+}

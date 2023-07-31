@@ -8,10 +8,6 @@ module.exports = {
     src: src + '/scss/style.scss',
     dest: dest + '/css/'
   },
-  uncss: {
-    src: dest + '/css/style.css',
-    dest: dest + '/css/'
-  },
   scripts: {
     src: src + '/js/*.js',
     dest: dest + '/js',

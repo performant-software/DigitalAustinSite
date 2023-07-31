@@ -11,7 +11,7 @@
 
 
 require('./gulp/config');
-require('./gulp/tasks/sass');
 require('./gulp/tasks/scripts');
 require('./gulp/tasks/uglify');
+require('./gulp/tasks/sass');
 require('./gulp/tasks/default');

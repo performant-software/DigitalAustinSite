@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "gulp",
+    "dev": "gulp dev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "install": "napa"
   },
@@ -19,23 +20,22 @@
     "url": "https://github.com/DigitalAustinPapers/DigitalAustinSite.git"
   },
   "devDependencies": {
-    "bootstrap-sass": "^3.3.5",
-    "browserify": "^11.0.1",
-    "browserify-shim": "^3.8.10",
+    "bootstrap-sass": "^3.4.3",
+    "browserify": "^17.0.0",
+    "browserify-shim": "^3.8.16",
     "d3": "^3.5.6",
     "gulp": "^4.0.2",
     "gulp-sass": "~5.1.0",
-    "gulp-sourcemaps": "^1.5.2",
-    "gulp-uglify": "^1.4.1",
-    "gulp-uncss": "^1.0.3",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
     "jquery": "~1.9.1",
     "lodash": "~3.10.1",
     "napa": "^3.0.0",
     "sass": "^1.64.1",
     "sass-material-colors": "0.0.5",
-    "stream-combiner2": "^1.0.2",
-    "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.3.1"
+    "stream-combiner2": "^1.1.1",
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^4.0.0"
   },
   "browserify": {
     "transform": [
