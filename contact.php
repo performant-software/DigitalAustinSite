@@ -3,7 +3,7 @@
 $success = null;
 
 if(isset($_POST['submit'])) {
-  require_once('src/recaptcha/src/autoload.php');
+  require_once('vendor/autoload.php');
   require_once('php/localCredentials.php');
 
   // Google recaptcha site key and secret key
