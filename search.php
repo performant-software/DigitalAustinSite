@@ -224,6 +224,8 @@ $search_dropdowns = array(
   'allSentiments'     => $allSentiments,
 );
 
+$googleMapsKey = getenv('GOOGLE_MAPS_KEY');
+
 $template = new TemplateRenderer();
 // Include any variables as an array in the second param
 print $template->render('search.html.twig', array(
@@ -231,5 +233,6 @@ print $template->render('search.html.twig', array(
                         'search_dropdowns'     => $search_dropdowns,
                         'totalDocsCount'       => $totalDocs,
                         'totalDocDistribution' => $docDistDocs,
-                        'body_id'               => 'search'
+                        'body_id'              => 'search',
+                        'googleMapsKey'      => $googleMapsKey
 ));
