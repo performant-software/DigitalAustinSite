@@ -8,10 +8,10 @@
 		};
 		var map = new google.maps.Map(document.getElementById('map_canvas'),
 			myOptions);
-		
+
 		var myLatLng;
 		var bounds = new google.maps.LatLngBounds();\n";
-	
+
 	$destinations = $place;
 	$origins = $place2;
 	//$places[] = "San Felipe de Ausitn, Texas";
@@ -19,12 +19,12 @@
 	//$places[] = "Saltillo, Coahuila";
 	//$places = unserialize(stripslashes($_POST['places']) );
 	//$places = str_replace("*", "'", $places);
-	
+
 	foreach($origins as $key => $currOrigin){
 		echo "myLatLng = new google.maps.LatLng(31.294, -92.459);\n";
 		echo "var marker = new google.maps.Marker({\n";
 		echo "title: 'ALEXANDRIA, LOUISIANA',\n";
-		echo "position: myLatLng,\n"; 
+		echo "position: myLatLng,\n";
 
 		echo "map: map,\n";
 		echo "icon: 'pics/gmap_blue_icon.png'\n";
@@ -33,8 +33,8 @@
 		echo "bounds.extend(myLatLng)\n";
 		echo "map.fitBounds(bounds)\n";
 	}
-	
-	
+
+
 	/*
 if(
 !strcmp($currOrigin, "Alexandria, Louisiana")
@@ -43,7 +43,7 @@ if(
 echo "myLatLng = new google.maps.LatLng(31.294, -92.459);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'ALEXANDRIA, LOUISIANA',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -67,7 +67,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(29.793, -96.091);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'SAN FELIPE, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -83,7 +83,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(29.472, -98.537);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'SAN ANTONIO, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -102,7 +102,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(25.4167, -101.0);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'SALTILLO, COAHUILA, MEXICO',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -117,7 +117,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(34.748, -92.276);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'LITTLE ROCK, ARKANSAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -134,7 +134,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(29.510, -97.452);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'GONZALES, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -150,7 +150,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(29.297, -94.796);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'GALVESTON, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -166,7 +166,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(28.672, -97.389);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'GOLIAD, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -184,7 +184,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(19.202, -96.137);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'VERACRUZ, MEXICO',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -202,7 +202,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(28.805, -97.013);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'VICTORIA, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -219,7 +219,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(40.118, -75.015);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'PHILADELPHIA, PENNSYLVANIA',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -237,7 +237,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(37.938, -90.785);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'POTOSI, MISSOURI',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -254,7 +254,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(25.6667, -100.317);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'MONTERREY, MEXICO',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -269,7 +269,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(31.557, -90.111);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'MONTICELLO, MISSISSIPPI',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -284,7 +284,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(36.853, -86.883);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'RUSSELLVILLE, KENTUCKY',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -299,7 +299,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(39.586, -91.398);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'NEW LONDON, MISSOURI',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -314,7 +314,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(40.894, -76.798);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'NORTHUMBERLAND, PENNSYLVANIA',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -329,7 +329,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(27.0167, -100.517);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'LAMPAZOS DE NARANJO, NUEVO LEON, MEXICO',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -344,7 +344,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(32.522, -92.103);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'MONROE, LOUISIANA',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -360,7 +360,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(36.590, -89.549);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'NEW MADRID, MISSOURI',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -375,7 +375,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(32.399, -86.326);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'MONTGOMERY, ALABAMA',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -391,7 +391,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(26.9, -101.417);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'MONVCLOVA, COAHUILA, MEXICO',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -409,7 +409,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(31.176, -91.353);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'WOODVILLE, MISSISSIPPI',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -429,7 +429,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(19.24, -99.09);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'MEXICO CITY, MEXICO',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -444,7 +444,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(29.956, -90.079);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'NEW ORLEANS, LOUISIANA',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -465,7 +465,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(25.7699, -97.5253);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'MATAMOROS, MEXICO',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -484,7 +484,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(31.761, -93.088);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'NATCHITOCHES, LOUISIANA',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -501,7 +501,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(31.609, -94.651);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'NACOGDOCHES, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -516,7 +516,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(36.166, -86.780);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'NASHVILLE, TENNESSEE',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -532,7 +532,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(31.542, -91.365);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'NATCHEZ, MISSISSIPPI',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -547,7 +547,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(44.354, -69.731);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'AUGUSTA, MAINE',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -562,7 +562,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(28.696, -95.971);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'MATAGORDA, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -577,7 +577,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(35.068, -89.958);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'MEMPHIS, TENNESSEE',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -593,7 +593,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(42.346, -83.061);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'DETROIT, MICHIGAN',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -607,7 +607,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(42.346, -83.061);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'HAVANA, CUBA',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -621,7 +621,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(42.346, -83.061);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'Havana,',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -645,7 +645,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(29.043, -95.567);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'BRAZORIA, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -668,7 +668,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(29.010, -96.684);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'VANDERBILT, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -683,7 +683,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(37.557, -89.843);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'PERRYVILLE, MISSOURI',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -697,7 +697,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(37.557, -89.843);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'JESUP, LOUISIANA',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -712,7 +712,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(31.6129491, -93.4029513);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'Cantonment, Jessup, Louisiana',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -727,7 +727,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(32.779, -79.940);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'CHARLESTON, SOUTH CAROLINA',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -742,7 +742,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(39.328, -82.983);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'CHILLICOTHE, OHIO',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -757,7 +757,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(39.109, -84.501);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'CINCINNATI, OHIO',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -771,7 +771,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(39.109, -84.501);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'JEFFERSON, MISSOURI',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -785,7 +785,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(39.109, -84.501);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'City of Jefferson,Missouri',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -801,7 +801,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(30.710, -90.897);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'CLINTON, LOUISIANA',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -815,7 +815,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(30.710, -90.897);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'VELASCO, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -829,7 +829,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(30.710, -90.897);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'Velasco, Texas',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -845,7 +845,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(40.752, -73.995);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'NEW YORK, NEW YORK',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -862,7 +862,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(29.741, -96.382);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'BERNARDO, TEXAS [4 miles south of Hempstead, Texas on FM 1887]',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -878,7 +878,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(31.176, -91.353);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'PINCKNEYVILLE, MISSISSIPPI',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -896,7 +896,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(34.725, -87.698);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'TUSCUMBIA, ALABAMA',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -912,7 +912,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(37.980, -84.169);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'WINCHESTER, KENTUCKY',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -927,7 +927,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(38.002, -84.480);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'LEXINGTON, KENTUCKY',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -941,7 +941,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(38.002, -84.480);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'LINCOLN, TENNESSEE',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -955,7 +955,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(38.002, -84.480);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'Lincoln City, Tennessee',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -970,7 +970,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(38.981, -91.007);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'LINCOLN COUNTY, MISSOURI [COULD USE TROY, MO, IF NECESSARY]',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -985,7 +985,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(38.247, -85.777);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'LOUISVILLE, KENTUCKY',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1004,7 +1004,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(29.574, -98.151);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'MARION, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1019,7 +1019,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(31.529, -94.111);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'AYISH BAYOU, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1034,7 +1034,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(29.754, -94.566);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'ANAHUAC, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1049,7 +1049,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(30.140, -91.823);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'SAINT MARTINVILLE, LOUISIANA',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1064,7 +1064,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(41.073, -82.891);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'ATTICA, OHIO',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1082,7 +1082,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(31.529, -94.111);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'SAN AUGUSTINE COUNTY, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1097,7 +1097,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(28.672, -97.389);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'GOLIAD, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1112,7 +1112,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(37.814, -85.466);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'BARDSTOWN, KENTUCKY',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1127,7 +1127,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(38.965, -92.743);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'BOONVILLE, MISSOURI',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1142,7 +1142,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(35.597, -89.271);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'BROWNSVILLE, TENNESSEE',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1157,7 +1157,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(29.720, -95.222);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'HOUSTON, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1173,7 +1173,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(27.6667, -105.167);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'CAMARGO, SONORA, MEXICO',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1186,11 +1186,11 @@ else if(
 !strcmp($currOrigin, "Caney,") ||
 !strcmp($currOrigin, "Cany")
 ){
-// CANEY CREEK, TEXAS [Google brings up location of the river, north of Houston about halfway to Huntsville] 
+// CANEY CREEK, TEXAS [Google brings up location of the river, north of Houston about halfway to Huntsville]
 echo "myLatLng = new google.maps.LatLng(29.3496912, -96.2085735);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'CANEY CREEK, TEXAS [Google brings up location of the river, north of Houston about halfway to Huntsville] ',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1205,7 +1205,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(28.964, -95.948);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'CEDAR LAKE, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1220,7 +1220,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(25.9843, -99.7092);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'CERRALVO MUNICIPALITY, NUEVO LEON, MEXICO',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1235,7 +1235,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(35.610, -87.049);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'COLUMBIA, TENNESSEE',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1250,7 +1250,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(37.640, -84.782);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'DANVILLE, KENTUCKY',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1268,7 +1268,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(29.297, s-94.796);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'GALVESTON, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1283,7 +1283,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(40.898, -80.958);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'DAMASCUS, OHIO',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1301,7 +1301,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(29.992, -95.182);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'ATASCOCITA, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1318,7 +1318,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(30.521868, -95.295218);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'SAN JACINTO, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1334,7 +1334,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(31.940, -94.255);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'TENAHA, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1349,7 +1349,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(28.805, -97.013);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'VICTORIA, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1364,7 +1364,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(43.190, -70.894);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'DOVER, NEW HAMPSHIRE',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1379,7 +1379,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(33.327, -83.346);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'EATONTON, GEORGIA',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1394,7 +1394,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(44.262, -73.374);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'ESSEX, NEW YORK',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1410,7 +1410,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(28.973, -95.340);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'QUINTANA, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1425,7 +1425,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(38.200, -84.948);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'FRANKFORT, KENTUCKY',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1440,7 +1440,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(29.796, -91.507);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'FRANKLIN, LOUISIANA',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1456,7 +1456,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(37.560, -90.293);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'FREDERICKTOWN, MISSOURI',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1471,7 +1471,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(38.785, -84.903);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'WARSAW, KENTUCKY',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1486,7 +1486,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(36.390, -86.454);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'GALLATIN, TENNESSEE',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1503,7 +1503,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(30.926, -94.005);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'HARRISBURG, TEXAS [EAST PART OF HOUSTON]',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1519,7 +1519,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(33.662, -93.589);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'HOPE, ARKANSAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1534,7 +1534,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(35.659, -88.401);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'LEXINGTON, TENNESSEE',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1549,7 +1549,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(38.266, -90.384);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'HERCULANEUM, MISSOURI',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1564,7 +1564,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(28.973, -95.340);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'OYSTER CREEK, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1580,7 +1580,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(28.696, -95.971);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'MATAGORDA, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1595,7 +1595,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(36.868, -87.480);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'HOPKINSVILLE, KENTUCKY',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1610,7 +1610,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(30.778, -91.210);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'JACKSON, LOUISIANA',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1626,7 +1626,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(38.632, -90.191);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'ST. LOUIS, MISSOURI',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1641,7 +1641,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(37.878, -84.578);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'NICHOLASVILLE, KENTUCKY',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1656,7 +1656,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(36.067, -94.155);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'FAYETTEVILLE, ARKANSAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1673,7 +1673,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(27.5, -99.5167);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'NUEVO LAREDO, MEXICO',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1688,7 +1688,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(41.326, -74.802);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'MILFORD, PENNSYLVANIA',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1704,7 +1704,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(30.162, -96.396);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'WASHINGTON COUNTY, TEXAS [COULD USE BRENHAM, TX, IF NECESSARY]',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1719,7 +1719,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(37.231, -93.850);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'MILLER, MISSOURI',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1734,7 +1734,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(33.424, -94.102);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'TEXARKANA, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1749,7 +1749,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(33.827, -88.555);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'ABERDEEN, MISSISSIPPI',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1764,7 +1764,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(31.405, -90.844);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'MONROE, MISSISSIPPI',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1779,7 +1779,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(31.958, -90.982);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'PORT GIBSON, MISSISSIPPI',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1794,7 +1794,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(35.561, -89.838);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'RANDOLPH, TENNESSEE',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1809,7 +1809,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(31.294, -92.459);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'ALEXANDRIA, LOUISIANA',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1824,7 +1824,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(31.318, -92.683);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'RAPIDES, LOUISIANA',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1839,7 +1839,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(26.0833, -98.2833 );\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'REYNOSA, TAMAULIPAS, MEXICO',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1854,7 +1854,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(38.762, -83.813);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'RIPLEY, OHIO',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1870,7 +1870,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(40.122, -90.561);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'RUSHVILLE, ILLINOIS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1885,7 +1885,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(26.4166667, -101.3333333);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'SAN CARLOS, COAHUILA, MEXICO',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1900,7 +1900,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(26.1, -98.4166667);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'SAN CARLOS, TAMULIPAS, MEXICO',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1915,7 +1915,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(19.283333, -99.65);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'SAN LUIS POTOSI, MEXICO',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1930,7 +1930,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(35.3311955, -93.2924011);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'SCOTIA, ARKANSAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1945,7 +1945,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(35.476, -86.467);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'SHELBYVILLE, TENNESSEE',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1960,7 +1960,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(44.815, -73.077);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'ST. ALBANS, VERMONT',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1975,7 +1975,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(37.912590, -90.151554);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'STE. GENEVIEVE, MISSOURI',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -1990,7 +1990,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(29.64528, -91.39389);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'ST. MARY PARISH, LOUISIANA',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -2005,7 +2005,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(33.750, -93.668);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'WASHINGTON, ARKANSAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -2020,7 +2020,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(38.616, -83.806);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'WASHINGTON, KENTUCKY',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -2035,7 +2035,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(31.706, -87.780);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'GROVE HILL, ALABAMA',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -2051,7 +2051,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(29.895, -93.956);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'SABINE RIVER, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -2066,7 +2066,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(30.389, -96.085);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'NAVASOTA, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -2081,7 +2081,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(29.724, -94.919);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'BEACH CITY, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -2099,7 +2099,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(30.705, -94.938);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'LIVINGSTON, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -2115,7 +2115,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(30.038, -94.746);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'LIBERTY, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -2132,7 +2132,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(29.708, -96.547);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'COLUMBUS, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -2148,7 +2148,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(30.162, -96.396);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'INDEPENDENCE, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -2163,7 +2163,7 @@ else if(
 echo "myLatLng = new google.maps.LatLng(29.0655358, -96.7691462);\n";
 echo "var marker = new google.maps.Marker({\n";
 echo "title: 'NAVIDAD RIVER, TEXAS',\n";
-echo "position: myLatLng,\n"; 
+echo "position: myLatLng,\n";
 echo "map: map,\n";
 echo "icon: 'pics/gmap_blue_icon.png'\n";
 echo "});\n";
@@ -2172,7 +2172,7 @@ echo "map.fitBounds(bounds)\n";
 }
 
 	}
-	
+
 	foreach ($destinations as $key => $currDestination) {
 
 		if(
@@ -2209,7 +2209,7 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(29.8019, -96.1014);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'San Felipe, TX',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
@@ -2224,7 +2224,7 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(29.53, -98.47);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'San Antonio, TX',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
@@ -2242,13 +2242,13 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(25.4, -101.0);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'Saltillo, Coahuila, Mexico',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
 			echo "map.fitBounds(bounds)\n";
 		}
-		
+
 		else if(
 		!strcmp($currDestination, "Nacogdoches, Texas")
 		){
@@ -2256,13 +2256,13 @@ echo "map.fitBounds(bounds)\n";
 			echo "var myLatLng = new google.maps.LatLng(31.61, -94.63);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'Nacogdoches, TX',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
 			echo "map.fitBounds(bounds)\n";
 		}
-		
+
 		else if(
 		!strcmp($currDestination, "Nachitoches, Louisiana") ||
 		!strcmp($currDestination, "Natchitoces, Louisiana") ||
@@ -2272,13 +2272,13 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(31.760, -93.086);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'Natchitoches, LA',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
 			echo "map.fitBounds(bounds)\n";
 		}
-		
+
 		else if(
 		!strcmp($currDestination, "Philadelphia, Pennslyvania") ||
 		!strcmp($currDestination, "Philadelphia, Pennsylvania") ||
@@ -2288,13 +2288,13 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(39.88, -75.25);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'Philadelphia, PA',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
 			echo "map.fitBounds(bounds)\n";
 		}
-		
+
 		else if(
 		!strcmp($currDestination, "Cincinnati, Ohio")
 		){
@@ -2302,13 +2302,13 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(39.05, -84.67);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'Cincinnati, OH',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
 			echo "map.fitBounds(bounds)\n";
 		}
-		
+
 		else if(
 		!strcmp($currDestination, "Natchez, Mississippi")
 		){
@@ -2316,13 +2316,13 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(31.62, -91.25);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'Natchez, MS',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
 			echo "map.fitBounds(bounds)\n";
 		}
-		
+
 		else if(
 		!strcmp($currDestination, "New Orleans, Louisiana")
 		){
@@ -2330,13 +2330,13 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(29.98, -90.25);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'New Orleans, LA',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
 			echo "map.fitBounds(bounds)\n";
 		}
-		
+
 		else if(
 		!strcmp($currDestination, "Pittsburg, Pennsylvania")
 		){
@@ -2344,13 +2344,13 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(40.50, -80.22);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'Pittsburg, PA',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
 			echo "map.fitBounds(bounds)\n";
 		}
-		
+
 		else if(
 		!strcmp($currDestination, "San Jacinto, Texas")
 		){
@@ -2358,13 +2358,13 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(30.598679, -95.141631);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'San Jacinto, TX',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
 			echo "map.fitBounds(bounds)\n";
 		}
-		
+
 		else if(
 		!strcmp($currDestination, "Mine a Burton, Missouri") ||
 		!strcmp($currDestination, "Mine a Burton, Wanshington County, Missouri") ||
@@ -2376,13 +2376,13 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(37.94, -90.77);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'Potosi, MO',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
 			echo "map.fitBounds(bounds)\n";
 		}
-		
+
 		else if(
 		!strcmp($currDestination, "Matamoras, Tamaulipas") ||
 		!strcmp($currDestination, "Matamoros, Texas")
@@ -2391,13 +2391,13 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(25.7703, -97.5269);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'Matamoros, Mexico',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
 			echo "map.fitBounds(bounds)\n";
 		}
-		
+
 		else if(
 		!strcmp($currDestination, "Matagorda") ||
 		!strcmp($currDestination, "Matagorda, Texas")
@@ -2406,13 +2406,13 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(28.695229, -95.967832);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'Matagorda, TX',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
 			echo "map.fitBounds(bounds)\n";
 		}
-		
+
 		else if(
 		!strcmp($currDestination, "San Martinville, Attakapas, Louisiana")
 		){
@@ -2420,13 +2420,13 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(30.13, -91.82);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'St Martinville, LA',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
 			echo "map.fitBounds(bounds)\n";
 		}
-		
+
 		else if(
 		!strcmp($currDestination, "Brazoria, Texas") ||
 		!strcmp($currDestination, "Lower Settlement, Texas")
@@ -2435,13 +2435,13 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(29.023642, -95.586683);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'Brazoria, TX',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
 			echo "map.fitBounds(bounds)\n";
 		}
-		
+
 		else if(
 		!strcmp($currDestination, "Ayish Bayou, Texas")
 		){
@@ -2449,13 +2449,13 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(31.126, -94.062);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'Ayish Bayou, TX',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
 			echo "map.fitBounds(bounds)\n";
 		}
-		
+
 		else if(
 		!strcmp($currDestination, "Hazelwood, Missouri")
 		){
@@ -2463,13 +2463,13 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(38.78, -90.37);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'Hazelwood, MO',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
 			echo "map.fitBounds(bounds)\n";
 		}
-		
+
 		else if(
 		!strcmp($currDestination, "Velasco, Texas")
 		){
@@ -2477,13 +2477,13 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(28.9619144, -95.360495);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'Velasco, TX',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
 			echo "map.fitBounds(bounds)\n";
 		}
-		
+
 		else if(
 		!strcmp($currDestination, "Pleasant Byou, Texas")
 		){
@@ -2491,13 +2491,13 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(29.2655169, -95.2324323);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'Pleasant Bayou, TX',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
 			echo "map.fitBounds(bounds)\n";
 		}
-		
+
 		else if(
 		!strcmp($currDestination, "Chocolate Bayou, Texas")
 		){
@@ -2505,13 +2505,13 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(29.315, -95.254);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'Chocolate Bayou, TX',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
 			echo "map.fitBounds(bounds)\n";
 		}
-		
+
 		else if(
 		!strcmp($currDestination, "Buffalo Bayou, Texas")
 		){
@@ -2519,13 +2519,13 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(29.97, -95.35);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'Houston, TX',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
 			echo "map.fitBounds(bounds)\n";
 		}
-		
+
 		else if(
 		!strcmp($currDestination, "Peach Point, Texas")
 		){
@@ -2533,13 +2533,13 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(28.95, -95.36);\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'Freeport, TX',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
 			echo "map.fitBounds(bounds)\n";
 		}
-		
+
 		else if(
 		!strcmp($currDestination, "Mexico")
 		){
@@ -2547,13 +2547,13 @@ echo "map.fitBounds(bounds)\n";
 			echo "myLatLng = new google.maps.LatLng(19.24, -99.09 ;\n";
 			echo "var marker = new google.maps.Marker({\n";
 			echo "title: 'Mexico City, Mexico',\n";
-			echo "position: myLatLng,\n"; 
+			echo "position: myLatLng,\n";
 			echo "map: map\n";
 			echo "});\n";
 			echo "bounds.extend(myLatLng)\n";
 			echo "map.fitBounds(bounds)\n";
 		}
 	}
-	
+
 */
 ?>

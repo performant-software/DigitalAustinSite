@@ -192,7 +192,7 @@
   <script src="public/js/vendor/jquery.paging.min.js"></script>
   <script src="public/js/paging.js"></script>
   <!-- Google AJAX API -->
-  <script src="https://www.google.com/jsapi?key=AIzaSyCld462mkpAZrPllmHK8eJGXenW5Kus7g0"></script>
+  <script src="https://www.google.com/jsapi?key={{ app.request.server.get('GOOGLE_MAPS_KEY') }}"></script>
   <script src="public/js/results.js"></script>
 
   {% if search_params != null %}
