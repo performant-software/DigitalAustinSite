@@ -1,15 +1,10 @@
 'use strict';
 
 var gulp = require('gulp'),
-    _ = require('lodash'),
     config = require('../config').scripts;
 
 const commonScripts = () => {
-  var paths = [];
-
-  _.forEach(config.common_libs, function(path) {
-    paths.push(path);
-  });
+  const paths = Object.keys(config.common_libs).map((key) => config.common_libs[key])
 
   return gulp.src(paths)
       .pipe(gulp.dest(config.vendor_dest));
