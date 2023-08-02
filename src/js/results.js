@@ -884,9 +884,6 @@ var mapIsSetup = false,
     lines = [],
     infoWindows = [];
 
-// Load Maps API package
-google.load("maps", "3", {other_params:'sensor=false'});
-
 // Performs initial map setup
 function setupMap() {
     $('.geographic-chart-tab .searching-progress').show();
