@@ -147,10 +147,12 @@ while ($i < $numPlaces) {
 
 $placeIdToNames = json_encode($placeIdToNames);
 
+echo json_last_error_msg();
+
 if ($placeIdToNames) {
  echo $placeIdToNames;
 } else {
-  echo '$plateIdToNames is empty';
+  echo '$placeIdToNames is empty';
 };
 
 // Generate $personIdToNames JSON for template
