@@ -145,7 +145,7 @@ while ($i < $numPlaces) {
 }
 
 
-$placeIdToNames = json_encode($placeIdToNames);
+$placeIdToNames = json_encode($placeIdToNames, JSON_UNESCAPED_UNICODE);
 
 echo json_last_error_msg();
 
