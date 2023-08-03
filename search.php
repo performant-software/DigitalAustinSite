@@ -144,16 +144,7 @@ while ($i < $numPlaces) {
   $i++;
 }
 
-
 $placeIdToNames = json_encode($placeIdToNames, JSON_UNESCAPED_UNICODE);
-
-echo json_last_error_msg();
-
-if ($placeIdToNames) {
- echo $placeIdToNames;
-} else {
-  echo '$placeIdToNames is empty';
-};
 
 // Generate $personIdToNames JSON for template
 $i=0;
