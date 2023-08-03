@@ -136,10 +136,13 @@ $allSentiments    = array();
 
 // Generate $placeIdToNames JSON for template
 $i=0;
+echo $numPlaces;
 while ($i < $numPlaces) {
   $row = mysqli_fetch_array($findPlaces);
   $placeId = $row['id'];
   $placeName = $row['name'];
+  echo $placeName;
+  echo $placeId;
   $placeIdToNames[$placeId] = $placeName;
   $i++;
 }
