@@ -136,16 +136,16 @@ $allSentiments    = array();
 
 // Generate $placeIdToNames JSON for template
 $i=0;
-echo $numPlaces;
 while ($i < $numPlaces) {
   $row = mysqli_fetch_array($findPlaces);
   $placeId = $row['id'];
+  echo mb_detect_encoding($row['name']);
   $placeName = $row['name'];
-  echo $placeName;
-  echo $placeId;
   $placeIdToNames[$placeId] = $placeName;
   $i++;
 }
+
+
 $placeIdToNames = json_encode($placeIdToNames);
 
 echo $placeIdToNames;
