@@ -145,6 +145,8 @@ while ($i < $numPlaces) {
 }
 $placeIdToNames = json_encode($placeIdToNames);
 
+echo $placeIdToNames;
+
 // Generate $personIdToNames JSON for template
 $i=0;
 
