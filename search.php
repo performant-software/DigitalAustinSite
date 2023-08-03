@@ -147,6 +147,9 @@ $placeIdToNames = json_encode($placeIdToNames);
 
 // Generate $personIdToNames JSON for template
 $i=0;
+
+echo $numPeople;
+
 while ($i < $numPeople) {
   $row = mysqli_fetch_array($findPeople);
   $personId = $row['id'];
@@ -154,7 +157,9 @@ while ($i < $numPeople) {
   $personIdToNames[$personId] = $personName;
   $i++;
 }
+echo $personIdToNames;
 $personIdToNames = json_encode($personIdToNames);
+
 
 // Function to generate list of authors and recipients
 function listPersons($numRows, $queryName) {
