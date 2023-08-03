@@ -176,6 +176,7 @@
 
       {% include '_results.twig' %}
       <script>
+        console.log(`{{ search_dropdowns.personIdToNames|raw }}`)
         var placeIdToNames = {{ search_dropdowns.placeIdToNames|raw }};
         var personIdToNames = {{ search_dropdowns.personIdToNames|raw }};
       </script>
