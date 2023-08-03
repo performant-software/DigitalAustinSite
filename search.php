@@ -140,7 +140,7 @@ while ($i < $numPlaces) {
   $row = mysqli_fetch_array($findPlaces);
   $placeId = $row['id'];
   $placeName = $row['name'];
-  $placeIdToNames[$placeId] = $placeName;
+  $placeIdToNames[$placeId] = mb_convert_encoding($placeName, 'UTF-8', 'UTF-8');
   $i++;
 }
 
