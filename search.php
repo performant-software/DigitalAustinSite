@@ -139,7 +139,6 @@ $i=0;
 while ($i < $numPlaces) {
   $row = mysqli_fetch_array($findPlaces);
   $placeId = $row['id'];
-  echo mb_detect_encoding($row['name']);
   $placeName = $row['name'];
   $placeIdToNames[$placeId] = $placeName;
   $i++;
@@ -148,7 +147,11 @@ while ($i < $numPlaces) {
 
 $placeIdToNames = json_encode($placeIdToNames);
 
-echo $placeIdToNames;
+if ($placeIdToNames) {
+ echo $placeIdToNames;
+} else {
+  echo '$plateIdToNames is empty';
+};
 
 // Generate $personIdToNames JSON for template
 $i=0;
