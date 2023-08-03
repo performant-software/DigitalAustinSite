@@ -156,7 +156,6 @@ while ($i < $numPeople) {
   $i++;
 }
 $personIdToNames = json_encode($personIdToNames);
-echo $personIdToNames;
 
 
 // Function to generate list of authors and recipients
