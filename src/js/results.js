@@ -429,21 +429,22 @@ function updateTimeChart(isPercentageDomain) {
 
     // Set scales and ranges
     if (mobile) {
-        var x = d3.scale.linear()
+        var x = d3.scaleLinear()
             .range([0, width]);
 
-        var y = d3.scale.ordinal()
-            .rangeRoundBands([0, height], .1);
+        var y = d3.scaleBand()
+            .rangeRound([0, height], .1)
 
     } else {
-        var x = d3.scale.ordinal()
-            .rangeRoundBands([0, width],.1);
+        var x = d3.scaleBand()
+            .rangeRound([0, width],.1)
+            .round();
 
-        var y = d3.scale.linear()
+        var y = d3.scaleLinear()
             .range([height, 0]);
     }
 
-    var color = d3.scale.ordinal()
+    var color = d3.scaleOrdinal()
         .range(["#d9534f", "#727272", "#5cb85c"]);
 
     // Set axes
@@ -1146,17 +1147,17 @@ function wordChart(dataset, divId) {
             - margin.top - margin.bottom;
 
     // Create the x scale
-    var xScale = d3.scale.linear()
+    var xScale = d3.scaleLinear()
         .domain([0, d3.max(dataSet, function (d) {
             return parseInt(d.weight, 10);
         })]);
 
     // Create the y scale
-    var yScale = d3.scale.ordinal()
+    var yScale = d3.scaleBand()
         .domain(dataSet.map(function (d) {
             return d.text;
         }))
-        .rangeBands([height, 0], .1);
+        .range([height, 0], .1);
 
     // Create and append the outer svg and inner g for margins
     var chart = d3.select(divId)
