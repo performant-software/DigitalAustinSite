@@ -498,7 +498,7 @@ function updateTimeChart(isPercentageDomain) {
             })]);
         }
     }
-    color.domain(d3.keys(data[0]).filter(function(d) { return d !== "year" && d !== "total"; }));
+    color.domain(Object.keys(data[0]).filter(function(d) { return d !== "year" && d !== "total"; }));
 
     // Bind colors and coordinates to each year/sentiment
     data.forEach(function(d) {
