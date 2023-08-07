@@ -450,23 +450,23 @@ function updateTimeChart(isPercentageDomain) {
     if(mobile) {
         var xAxis = d3.axisBottom(x)
             .orient("bottom")
-            .outerTickSize(0)
-            .innerTickSize(-height + 5)
+            .tickSizeOuter(0)
+            .tickSizeInner(-height + 5)
             .ticks(5);
 
         var yAxis = d3.axisLeft(y)
-            .outerTickSize(0)
+            .tickSizeOuter(0)
             .orient("left");
 
     } else {
         var xAxis = d3.axisBottom(x)
-            .outerTickSize(0)
+            .tickSizeOuter(0)
             .orient("bottom");
 
         var yAxis = d3.axisLeft(y)
             .orient("left")
-            .outerTickSize(0)
-            .innerTickSize(-width + 5)
+            .tickSizeOuter(0)
+            .tickSizeInner(-width + 5)
             .ticks(5);
     }
 
