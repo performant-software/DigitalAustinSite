@@ -448,26 +448,22 @@ function updateTimeChart(isPercentageDomain) {
 
     // Set axes
     if(mobile) {
-        var xAxis = d3.svg.axis()
-            .scale(x)
+        var xAxis = d3.axisBottom(x)
             .orient("bottom")
             .outerTickSize(0)
             .innerTickSize(-height + 5)
             .ticks(5);
 
-        var yAxis = d3.svg.axis()
-            .scale(y)
+        var yAxis = d3.axisLeft(y)
             .outerTickSize(0)
             .orient("left");
 
     } else {
-        var xAxis = d3.svg.axis()
-            .scale(x)
+        var xAxis = d3.axisBottom(x)
             .outerTickSize(0)
             .orient("bottom");
 
-        var yAxis = d3.svg.axis()
-            .scale(y)
+        var yAxis = d3.axisLeft(y)
             .orient("left")
             .outerTickSize(0)
             .innerTickSize(-width + 5)
