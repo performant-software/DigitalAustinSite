@@ -651,13 +651,13 @@ function updateTimeChart(isPercentageDomain) {
         .append("rect")
         .attr("class", function(d) { return "time-chart__bar--" + d.name.toLowerCase(); })
         .attr("width", function(d) {
-            return mobile ? (isNaN(d.xy1) ? null : x(d.xy1) - x(d.xy0)) : x.rangeBand();
+            return mobile ? (isNaN(d.xy1) ? null : x(d.xy1) - x(d.xy0)) : x.range();
         })
         .attr("y", function(d) {
             return mobile ? null : (isNaN(d.xy1) ? null : y(d.xy1));
         })
         .attr("height", function(d) {
-            return mobile ? y.rangeBand() : (isNaN(d.xy1) ? null : y(d.xy0) - y(d.xy1));
+            return mobile ? y.range() : (isNaN(d.xy1) ? null : y(d.xy0) - y(d.xy1));
         })
         .attr("x", function(d) {
             return mobile ? (isNaN(d.xy0) ? null : x(d.xy0)) : null; })
