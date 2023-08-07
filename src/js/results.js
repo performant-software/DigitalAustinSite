@@ -437,8 +437,7 @@ function updateTimeChart(isPercentageDomain) {
 
     } else {
         var x = d3.scaleBand()
-            .rangeRound([0, width],.1)
-            .round();
+            .rangeRound([0, width],.1);
 
         var y = d3.scaleLinear()
             .range([height, 0]);
