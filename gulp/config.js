@@ -15,7 +15,7 @@ module.exports = {
     common_libs: {
       jquery: vendor + '/jquery/jquery.min.js',
       bootstrap: vendor + '/bootstrap-sass/assets/javascripts/bootstrap.min.js',
-      d3: src + '/js/lib/d3.min.js',
+      d3: vendor + '/d3/dist/d3.min.js',
       jquery_paging: src + '/js/lib/jquery.paging.min.js',
     }
   },
