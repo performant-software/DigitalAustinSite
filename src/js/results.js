@@ -630,7 +630,10 @@ function updateTimeChart(isPercentageDomain) {
 
     // add rect elements with sentiment bars and links to new searches
     year.selectAll("rect")
-        .data(function(d) { return d.sentiment; })
+        .data(function(d) {
+            console.log(d)
+            return d.sentiment
+        })
         .enter()
         .append("a")
         .attr("class", function(d) { return "time-chart__bar--" + d.name.toLowerCase(); })
