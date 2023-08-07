@@ -15,8 +15,8 @@ module.exports = {
     common_libs: {
       jquery: vendor + '/jquery/jquery.min.js',
       bootstrap: vendor + '/bootstrap-sass/assets/javascripts/bootstrap.min.js',
-      d3: vendor + '/d3/d3.min.js',
-      jquery_paging: vendor + '/jquery-paging/jquery.paging.min.js',
+      d3: src + '/js/lib/d3.export.js',
+      jquery_paging: src + '/js/lib/jquery.paging.export.js',
     }
   },
   browserify: {
