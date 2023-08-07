@@ -60,7 +60,6 @@
   {{ parent() }}
 
   {# Use CDN with fallback to local #}
-  <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
   <script>window.d3 || document.write('<script src="public/js/vendor/d3.min.js" async><\/script>')</script>
 
 {% endblock scripts %}
