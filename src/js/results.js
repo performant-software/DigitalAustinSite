@@ -647,7 +647,8 @@ function updateTimeChart(isPercentageDomain) {
         .append("rect")
         .attr("class", function(d) { return "time-chart__bar--" + d.name.toLowerCase(); })
         .attr("width", function(d) {
-            console.log(x(d.xy1) - x(d.xy0));
+            console.log(x(d.xy1));
+            console.log(x(d.xy0));
             return mobile ? (isNaN(d.xy1) ? null : x(d.xy1) - x(d.xy0)) : x.range();
         })
         .attr("y", function(d) {
