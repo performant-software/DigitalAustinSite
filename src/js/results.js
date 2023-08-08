@@ -673,11 +673,11 @@ function updateTimeChart(isPercentageDomain) {
     }
 
     if(mobile) {
-        var line = d3.svg.line()
+        var line = d3.line()
             .x(function(d) { return x(d.total); })
             .y(function(d) { return y(d.year) + halfBar; });
     } else {
-        var line = d3.svg.line()
+        var line = d3.line()
             .x(function(d) { return x(d.year) + halfBar; })
             .y(function(d) { return y(d.total); });
     }
