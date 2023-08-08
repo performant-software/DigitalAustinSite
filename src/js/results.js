@@ -492,9 +492,7 @@ function updateTimeChart(isPercentageDomain) {
                 return d.total;
             })])])
         } else {
-            console.log('assigning scale domains:')
             y.domain([0, d3.max(data, function(d) {
-                console.log(d.positive + d.neutral + d.negative);
                 return d.positive + d.neutral + d.negative;
             })]);
         }
@@ -504,7 +502,6 @@ function updateTimeChart(isPercentageDomain) {
     // Bind colors and coordinates to each year/sentiment
     data.forEach(function(d) {
         var xy0 = 0;
-        console.log(d)
         d.sentiment = color.domain().map(function(name) {
             return {
                 name: name,
@@ -513,7 +510,6 @@ function updateTimeChart(isPercentageDomain) {
                 xy1: xy0 += +d[name]
             };
         });
-        console.log(d.sentiment)
         d.total = d.sentiment[d.sentiment.length -1].xy1;
     });
 
@@ -634,10 +630,7 @@ function updateTimeChart(isPercentageDomain) {
 
     // add rect elements with sentiment bars and links to new searches
     year.selectAll("rect")
-        .data(function(d) {
-            console.log(d)
-            return d.sentiment
-        })
+        .data(function(d) { return d.sentiment })
         .enter()
         .append("a")
         .attr("class", function(d) { return "time-chart__bar--" + d.name.toLowerCase(); })
@@ -677,7 +670,11 @@ function updateTimeChart(isPercentageDomain) {
     if(mobile) {
         var line = d3.line()
             .x(function(d) { return x(d.total); })
-            .y(function(d) { return y(d.year) + halfBar; });
+            .y(function(d) {
+                console.log(d);
+                console.log(halfBar);
+                return y(d.year) + halfBar;
+            });
     } else {
         var line = d3.line()
             .x(function(d) { return x(d.year) + halfBar; })
