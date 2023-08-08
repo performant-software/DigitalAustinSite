@@ -502,6 +502,7 @@ function updateTimeChart(isPercentageDomain) {
     // Bind colors and coordinates to each year/sentiment
     data.forEach(function(d) {
         var xy0 = 0;
+        console.log(d)
         d.sentiment = color.domain().map(function(name) {
             return {
                 name: name,
