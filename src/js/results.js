@@ -492,7 +492,9 @@ function updateTimeChart(isPercentageDomain) {
                 return d.total;
             })])])
         } else {
+            console.log('assigning scale domains:')
             y.domain([0, d3.max(data, function(d) {
+                console.log(d.positive + d.neutral + d.negative);
                 return d.positive + d.neutral + d.negative;
             })]);
         }
