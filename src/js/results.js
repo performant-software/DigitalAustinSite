@@ -647,6 +647,7 @@ function updateTimeChart(isPercentageDomain) {
         .append("rect")
         .attr("class", function(d) { return "time-chart__bar--" + d.name.toLowerCase(); })
         .attr("width", function(d) {
+            console.log(x(d.xy1) - x(d.xy0));
             return mobile ? (isNaN(d.xy1) ? null : x(d.xy1) - x(d.xy0)) : x.range();
         })
         .attr("y", function(d) {
@@ -672,12 +673,8 @@ function updateTimeChart(isPercentageDomain) {
             .x(function(d) { return x(d.total); })
             .y(function(d) { return y(d.year) + halfBar; });
     } else {
-        console.log('defining line.')
         var line = d3.line()
-            .x(function(d) {
-                console.log(x(d.year) + halfBar);
-                return x(d.year) + halfBar;
-            })
+            .x(function(d) { return x(d.year) + halfBar; })
             .y(function(d) { return y(d.total); });
     }
 
