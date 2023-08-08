@@ -647,14 +647,13 @@ function updateTimeChart(isPercentageDomain) {
         .append("rect")
         .attr("class", function(d) { return "time-chart__bar--" + d.name.toLowerCase(); })
         .attr("width", function(d) {
-            console.log(x.range());
-            return mobile ? (isNaN(d.xy1) ? null : x(d.xy1) - x(d.xy0)) : x.range();
+            return mobile ? (isNaN(d.xy1) ? null : x(d.xy1) - x(d.xy0)) : x.range()[1];
         })
         .attr("y", function(d) {
             return mobile ? null : (isNaN(d.xy1) ? null : y(d.xy1));
         })
         .attr("height", function(d) {
-            return mobile ? y.range() : (isNaN(d.xy1) ? null : y(d.xy0) - y(d.xy1));
+            return mobile ? y.range()[1] : (isNaN(d.xy1) ? null : y(d.xy0) - y(d.xy1));
         })
         .attr("x", function(d) {
             return mobile ? (isNaN(d.xy0) ? null : x(d.xy0)) : null; })
