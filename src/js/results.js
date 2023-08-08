@@ -510,6 +510,7 @@ function updateTimeChart(isPercentageDomain) {
                 xy1: xy0 += +d[name]
             };
         });
+        console.log(d.sentiment)
         d.total = d.sentiment[d.sentiment.length -1].xy1;
     });
 
