@@ -670,14 +670,14 @@ function updateTimeChart(isPercentageDomain) {
     if(mobile) {
         var line = d3.line()
             .x(function(d) { return x(d.total); })
-            .y(function(d) {
-                console.log(d);
-                console.log(halfBar);
-                return y(d.year) + halfBar;
-            });
+            .y(function(d) { return y(d.year) + halfBar; });
     } else {
+        console.log('defining line.')
         var line = d3.line()
-            .x(function(d) { return x(d.year) + halfBar; })
+            .x(function(d) {
+                console.log(x(d.year) + halfBar);
+                return x(d.year) + halfBar;
+            })
             .y(function(d) { return y(d.total); });
     }
 
