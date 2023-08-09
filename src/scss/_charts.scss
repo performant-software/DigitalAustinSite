@@ -71,11 +71,19 @@
     .tick line {
       opacity: .2;
     }
+
+    .tick text {
+      font-size: 14px;
+    }
   }
 
   .x.axis {
     .tick line {
       opacity: .2;
+    }
+
+    .tick text {
+      font-size: 14px;
     }
   }
 

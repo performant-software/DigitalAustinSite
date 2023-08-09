@@ -433,11 +433,13 @@ function updateTimeChart(isPercentageDomain) {
             .range([0, width]);
 
         var y = d3.scaleBand()
-            .rangeRound([0, height], .1)
+            .rangeRound([0, height])
+            .paddingInner(0.1);
 
     } else {
         var x = d3.scaleBand()
-            .rangeRound([0, width],.1);
+            .rangeRound([0, width])
+            .paddingInner(0.1);
 
         var y = d3.scaleLinear()
             .range([height, 0]);
@@ -647,7 +649,7 @@ function updateTimeChart(isPercentageDomain) {
         .append("rect")
         .attr("class", function(d) { return "time-chart__bar--" + d.name.toLowerCase(); })
         .attr("width", function(d) {
-            return mobile ? (isNaN(d.xy1) ? null : x(d.xy1) - x(d.xy0)) : x.bandwidth();
+            return mobile ? (isNaN(d.xy1) ? null : x(d.xy1) - x(d.xy0)) : (x.bandwidth());
         })
         .attr("y", function(d) {
             return mobile ? null : (isNaN(d.xy1) ? null : y(d.xy1));
