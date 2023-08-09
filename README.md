@@ -5,6 +5,8 @@ Code running the Digital Austin Papers website
 
 ## Getting started on CentOS 7
 
+**Note: This section is very outdated and none of this is necessary after the 2023 dependency upgrades, but it took me a few minutes to write so I'm leaving it here.**
+
 I had to set this up on CentOS 7 because it's the only platform with PHP 5.4 that's still available on any major hosting service.
 
 In writing this guide, I will assume that you're comfortable with Ubuntu but hearing the name "CentOS" has you like 🤯.
