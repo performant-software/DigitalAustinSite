@@ -8,8 +8,7 @@ if(isset($_POST['submit'])) {
   require_once('php/localCredentials.php');
 
   // Google recaptcha site key and secret key
-  $siteKey = getenv('CAPTCHA_SITE_KEY');
-  $secret = getenv('CAPTCHA_SECRET');
+  $secret = getenv('CAPTCHA_SITE_KEY');
 
   $recaptcha = new \ReCaptcha\ReCaptcha($secret);
   $resp = $recaptcha->verify(filter_var($_POST['g-recaptcha-response'], FILTER_SANITIZE_STRING));
