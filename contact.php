@@ -11,16 +11,16 @@ if(isset($_POST['submit'])) {
   $secret = getenv('CAPTCHA_SITE_KEY');
 
   $recaptcha = new \ReCaptcha\ReCaptcha($secret);
-  $resp = $recaptcha->verify(filter_var($_POST['g-recaptcha-response'], FILTER_SANITIZE_STRING));
+  $resp = $recaptcha->verify(htmlspecialchars($_POST['g-recaptcha-response']));
 
   // set $success to fail by default on form submission
   $success = 'fail';
 
   if ($resp->isSuccess()) {
-    $name = filter_var($_POST['contact_name'], FILTER_SANITIZE_STRING);
+    $name = htmlspecialchars($_POST['contact_name']);
     $email = filter_var($_POST['contact_email'], FILTER_SANITIZE_EMAIL);
-    $reason = filter_var($_POST['contact_reason'], FILTER_SANITIZE_STRING);
-    $message = filter_var($_POST['contact_message'], FILTER_SANITIZE_STRING);
+    $reason = filter_var($_POST['contact_reason']);
+    $message = htmlspecialchars($_POST['contact_message']);
 
     try {
       $client = new PostmarkClient(getenv('POSTMARK_TOKEN'));
