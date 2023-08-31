@@ -7,7 +7,7 @@ $success = null;
 if(isset($_POST['submit'])) {
   require_once('php/localCredentials.php');
 
-  // Google recaptcha site key and secret key
+  // Google recaptcha site key
   $secret = getenv('CAPTCHA_SITE_KEY');
 
   $recaptcha = new \ReCaptcha\ReCaptcha($secret);
@@ -58,5 +58,6 @@ $template = new TemplateRenderer();
 // Include any variables as an array in the second param
 print $template->render('contact.html.twig', array(
                         'success' => $success,
-                        'body_id' => 'contact'
+                        'body_id' => 'contact',
+                        'site_key' => $secret
 ));
