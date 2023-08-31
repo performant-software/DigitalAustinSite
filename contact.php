@@ -10,6 +10,8 @@ if(isset($_POST['submit'])) {
   // Google recaptcha site key
   $secret = getenv('CAPTCHA_SITE_KEY');
 
+  print $secret;
+
   $recaptcha = new \ReCaptcha\ReCaptcha($secret);
   $resp = $recaptcha->verify(htmlspecialchars($_POST['g-recaptcha-response']));
 
