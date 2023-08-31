@@ -4,13 +4,11 @@ use Postmark\PostmarkClient;
 use Postmark\Models\PostmarkException;
 
 $success = null;
+// Google recaptcha site key
+$secret = getenv('CAPTCHA_SITE_KEY');
+
 if(isset($_POST['submit'])) {
   require_once('php/localCredentials.php');
-
-  // Google recaptcha site key
-  $secret = getenv('CAPTCHA_SITE_KEY');
-
-  print $secret;
 
   $recaptcha = new \ReCaptcha\ReCaptcha($secret);
   $resp = $recaptcha->verify(htmlspecialchars($_POST['g-recaptcha-response']));
