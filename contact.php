@@ -4,8 +4,9 @@ use Postmark\PostmarkClient;
 use Postmark\Models\PostmarkException;
 
 $success = null;
-// Google recaptcha site key
-$secret = getenv('CAPTCHA_SITE_KEY');
+// Google recaptcha site key and secret
+$site_key = getenv('CAPTCHA_SITE_KEY');
+$secret = getenv('CAPTCHA_SECRET');
 
 if(isset($_POST['submit'])) {
   require_once('php/localCredentials.php');
@@ -61,5 +62,5 @@ $template = new TemplateRenderer();
 print $template->render('contact.html.twig', array(
                         'success' => $success,
                         'body_id' => 'contact',
-                        'site_key' => $secret
+                        'site_key' => $site_key
 ));
