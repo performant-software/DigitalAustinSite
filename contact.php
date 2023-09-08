@@ -23,33 +23,16 @@ if(isset($_POST['submit'])) {
     $reason = filter_var($_POST['contact_reason']);
     $message = htmlspecialchars($_POST['contact_message']);
 
-    try {
-      $client = new PostmarkClient(getenv('POSTMARK_TOKEN'));
-      $subject = "Digital Austin Collection: " . $reason;
-      $body = $message . "\n\n" . "From: " . $name . " - " . $email;
+    $client = new PostmarkClient(getenv('POSTMARK_TOKEN'));
+    $subject = "Digital Austin Collection: " . $reason;
+    $body = $message . "\n\n" . "From: " . $name . " - " . $email;
 
-      $sendResult = $client->sendEmail(getenv('EMAIL_SENDER'),
-        getenv('EMAIL_RECIPIENT'),
-        $subject,
-        $body);
+    $sendResult = $client->sendEmail(getenv('EMAIL_SENDER'),
+      getenv('EMAIL_RECIPIENT'),
+      $subject,
+      $body);
 
-      // Getting the MessageID from the response
-      echo $sendResult->MessageID;
-      $success = 'success';
-    } catch(PostmarkException $ex){
-      // If the client is able to communicate with the API in a timely fashion,
-      // but the message data is invalid, or there's a server error,
-      // a PostmarkException can be thrown.
-      echo $ex->httpStatusCode;
-      echo $ex->message;
-      echo $ex->postmarkApiErrorCode;
-
-    } catch(Exception $generalException){
-      // A general exception is thrown if the API
-      // was unreachable or times out.
-      echo 'Oops! General exception occured while trying to send mail with Postmark:';
-      echo $generalException->getMessage();
-    }
+    $success = 'success';
   } else {
     $errors = $resp->getErrorCodes();
   }
