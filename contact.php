@@ -14,8 +14,6 @@ if(isset($_POST['submit'])) {
   $recaptcha = new \ReCaptcha\ReCaptcha($secret);
   $resp = $recaptcha->verify(htmlspecialchars($_POST['g-recaptcha-response']));
 
-  echo var_dump($resp);
-
   // set $success to fail by default on form submission
   $success = 'fail';
 
