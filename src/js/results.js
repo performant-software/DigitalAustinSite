@@ -130,23 +130,27 @@ function requestData() {
     // Reveal results summary
     document.getElementById('humanQuery').innerHTML = humanQueryString;
 
+    // JQuery's getJSON function will just assume insecure http://
+    // for relative paths. Really?!? So we have to work around it.
+    const baseUrl = `${window.location.protocol}//${window.location.host}`
+
     // Request new basic search data
-    $.getJSON('search_results.php' + getParams, function (json) {
+    $.getJSON(`${baseUrl}/search_results.php` + getParams, function (json) {
         $(document).trigger("basicDataLoaded", [json]);
     });
 
     // Request new chart data only if it's being listened for
-    $.getJSON('data/cloud.php' + getParams, function (json) {
+    $.getJSON(`${baseUrl}/data/cloud.php` + getParams, function (json) {
         $(document).trigger("chartDataLoaded", [json]);
     });
 
     // Request new city data only if it's being listened for
-    $.getJSON('data/cities.php' + getParams, function (json) {
+    $.getJSON(`${baseUrl}data/cities.php` + getParams, function (json) {
         $(document).trigger("cityDataLoaded", [json]);
     });
 
     // Request new network
-    $.getJSON('data/network.php' + getParams, function (json) {
+    $.getJSON(`${baseUrl}data/network.php` + getParams, function (json) {
         $(document).trigger("networkDataLoaded", [json]);
     });
 }
