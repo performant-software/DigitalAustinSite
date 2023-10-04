@@ -145,12 +145,12 @@ function requestData() {
     });
 
     // Request new city data only if it's being listened for
-    $.getJSON(`${baseUrl}data/cities.php` + getParams, function (json) {
+    $.getJSON(`${baseUrl}/data/cities.php` + getParams, function (json) {
         $(document).trigger("cityDataLoaded", [json]);
     });
 
     // Request new network
-    $.getJSON(`${baseUrl}data/network.php` + getParams, function (json) {
+    $.getJSON(`${baseUrl}/data/network.php` + getParams, function (json) {
         $(document).trigger("networkDataLoaded", [json]);
     });
 }
