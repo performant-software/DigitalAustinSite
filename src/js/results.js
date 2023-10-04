@@ -134,7 +134,8 @@ function requestData() {
     // for relative paths. Really?!? So we have to work around it.
     const baseUrl = `${window.location.protocol}//${window.location.host}`
 
-    console.log(`${baseUrl}/search_results.php`)
+    fetch(`${baseUrl}/search_results.php` + getParams)
+        .then(res => console.log(res))
 
     // Request new basic search data
     $.getJSON(`${baseUrl}/search_results.php` + getParams, function (json) {
