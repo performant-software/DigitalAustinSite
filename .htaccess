@@ -4,7 +4,10 @@ RewriteBase /
 RewriteCond %{HTTP_USER_AGENT} (google|yahoo|msn|aol|bing) [OR]
 RewriteCond %{HTTP_HOST} digitalaustinpapers\.org$
 
-
+# Force SSL
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 Options +FollowSymLinks -MultiViews
 # Turn mod_rewrite on
