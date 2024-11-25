@@ -47,13 +47,11 @@
         //    }
         //
 
-				echo getenv('DB_USERNAME');
-
         $connection = ($GLOBALS["___mysqli_ston"] = mysqli_connect(
-			getenv('DB_HOSTNAME'),
-            getenv('DB_USERNAME'),
-            getenv('DB_PASSWORD'),
-            getenv('DB_NAME')));
+						$_ENV['DB_HOSTNAME'],
+            $_ENV['DB_USERNAME'],
+            $_ENV['DB_PASSWORD'],
+            $_ENV['DB_NAME']));
 		return $connection;
 	}
 
