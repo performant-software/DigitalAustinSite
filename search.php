@@ -227,7 +227,7 @@ $search_dropdowns = array(
   'allSentiments'     => $allSentiments,
 );
 
-$googleMapsKey = getenv('GOOGLE_MAPS_KEY');
+$googleMapsKey = $_ENV['GOOGLE_MAPS_KEY'];
 
 $template = new TemplateRenderer();
 // Include any variables as an array in the second param

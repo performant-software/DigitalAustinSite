@@ -5,8 +5,8 @@ use Postmark\Models\PostmarkException;
 
 $success = null;
 // Google recaptcha site key and secret
-$site_key = getenv('CAPTCHA_SITE_KEY');
-$secret = getenv('CAPTCHA_SECRET');
+$site_key = $_ENV['CAPTCHA_SITE_KEY'];
+$secret = $_ENV['CAPTCHA_SECRET'];
 
 if(isset($_POST['submit'])) {
   require_once('php/localCredentials.php');
@@ -24,12 +24,12 @@ if(isset($_POST['submit'])) {
     $message = htmlspecialchars($_POST['contact_message']);
 
     try {
-      $client = new PostmarkClient(getenv('POSTMARK_TOKEN'));
+      $client = new PostmarkClient($_ENV['POSTMARK_TOKEN']);
       $subject = "Digital Austin Collection: " . $reason;
       $body = $message . "\n\n" . "From: " . $name . " - " . $email;
 
-      $sendResult = $client->sendEmail(getenv('EMAIL_SENDER'),
-        getenv('EMAIL_RECIPIENT'),
+      $sendResult = $client->sendEmail($_ENV['EMAIL_SENDER'],
+        $_ENV['EMAIL_RECIPIENT'],
         $subject,
         $body);
 
