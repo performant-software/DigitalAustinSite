@@ -46,6 +46,8 @@
         //        return $result;
         //    }
         //
+
+				echo getenv('DB_USERNAME')
         $connection = ($GLOBALS["___mysqli_ston"] = mysqli_connect(
 			getenv('DB_HOSTNAME'),
             getenv('DB_USERNAME'),
