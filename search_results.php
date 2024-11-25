@@ -23,6 +23,7 @@
 
 session_start();
 
+require_once('vendor/autoload.php');
 require_once 'src/TemplateRenderer.class.php';
 include 'php/porterStemmer.php';
 include_once 'php/database.php';
