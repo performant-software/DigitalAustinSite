@@ -3,6 +3,9 @@
 // autoload file from Composer to load and register Twig
 require_once 'vendor/autoload.php';
 
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
 class TemplateRenderer {
 
   protected $template_dir = 'src/templates/';
