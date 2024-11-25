@@ -12,6 +12,7 @@
 
 session_start();
 
+require_once 'vendor/autoload.php';
 include '../php/porterStemmer.php';
 include_once '../php/database.php';
 include '../data/query.php';
