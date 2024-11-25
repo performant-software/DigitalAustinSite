@@ -15,6 +15,7 @@ session_start();
 include '../php/porterStemmer.php';
 include_once '../php/database.php';
 include '../data/query.php';
+include '../php/env.php'
 
 $database = connectToDB();
 
@@ -22,7 +23,7 @@ $database = connectToDB();
 
 function buildTextLink($text) {
   $new_params = $_GET;
-  $new_params['query'] = $new_params['query'] . ' ' . $text; 
+  $new_params['query'] = $new_params['query'] . ' ' . $text;
   return 'search.php?' . http_build_query($new_params);
 }
 

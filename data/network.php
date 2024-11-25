@@ -15,6 +15,7 @@ session_start();
 include '../php/porterStemmer.php';
 include_once '../php/database.php';
 include '../data/query.php';
+include '../php/env.php'
 
 $database = connectToDB();
 
