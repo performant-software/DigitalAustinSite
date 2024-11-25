@@ -2,7 +2,7 @@
 // Ref: http://stackoverflow.com/questions/9842342/building-a-site-with-twig-php-template-engine
 // autoload file from Composer to load and register Twig
 require_once 'vendor/autoload.php';
-require_once '../php/env.php';
+require_once 'php/env.php';
 
 class TemplateRenderer {
 
